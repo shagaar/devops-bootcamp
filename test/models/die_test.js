@@ -14,7 +14,7 @@ describe('die attributes', () => {
   //   Validate that a default die has 6 sides
   it('should return the default number of sides', () => {
     let die = new Die();
-    die.sides.should.equal(6);
+    die.sides.should.equal(9);
   });
 
   // Test 2:
