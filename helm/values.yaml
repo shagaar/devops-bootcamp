@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 metadata:
-  namespace: workshopuser#
+  namespace: workshopuser8
 
 appVersion: "1.0"
 
@@ -11,7 +11,7 @@ replicas:
   replicaCount: 1
 
 image:
-  repository: 686567993080.dkr.ecr.us-east-1.amazonaws.com/devopsbootcampuser#
+  repository: 686567993080.dkr.ecr.us-east-1.amazonaws.com/devopsbootcampuser8
   tag: latest
 
 nameOverride: ""
