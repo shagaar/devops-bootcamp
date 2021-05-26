@@ -10,12 +10,12 @@ router.get('/', async (req, res) => {
   let message = `A die with ${die.sides} sides just rolled a ${roll}.`;
   await saveRoll(die.sides, roll);
 
-  if (isEnabled('MJStoggle')) {
+//  if (isEnabled('MJStoggle')) {
     let die2 = new Die(req.query.sides);
     let roll2 = die2.roll();
     message = `Two dice each with ${die.sides} sides just rolled a ${roll} and ${roll2}.`;
     await saveRoll(die2.sides, roll2);
-  }
+//  }
 
   res.send(message)
 });
